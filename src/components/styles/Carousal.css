@@ -1,0 +1,14 @@
+.scrollContainer {
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    margin: 30px auto;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.scrollContainer>div {
+    display: inline-block;
+    width: 100%;
+    scroll-snap-align: center;
+}

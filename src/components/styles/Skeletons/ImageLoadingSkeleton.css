@@ -1,0 +1,14 @@
+@keyframes LoadingAnimation {
+    0% {opacity: 100%; content: "Loading...";}
+    25% {opacity: 75%; content: "Loading..";}
+    50% {opacity: 25%; content: "Loading.";}
+    75% {opacity: 75%; content: "Loading..";}
+    100% {opacity: 100%; content: "Loading...";}
+}
+
+.loadingAnimation{
+    animation-name: LoadingAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+

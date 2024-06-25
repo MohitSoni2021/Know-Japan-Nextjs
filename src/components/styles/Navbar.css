@@ -1,0 +1,40 @@
+.DropDownAnimation{
+    height: fit-content;
+    animation: increaseWidhtAnimation 1s ;
+    transition: all 1s ease;
+}
+
+@keyframes increaseWidhtAnimation {
+    from{
+        opacity: 0;
+        margin-top: -250px;
+    }
+    to{
+        opacity: 100vh;
+        
+    }
+}
+.Rotate180:hover{
+    transition: all 0.2s ease;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.308);
+}
+
+.Rotate180 .dropdownArrowIcon{
+    transition: all 0.2s ease;
+}
+.Rotate180:hover .dropdownArrowIcon {
+    transform: rotate(180deg);
+    transition: all 0.2s ease;
+}
+.Rotate180:hover .DropdownOptionsList{
+    display: flex;
+}
+.Rotate180:hover .DropdownOptionsList ul{
+    display: flex;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.508),
+    -1px -1px 3px 1px rgba(255, 255, 255, 0.123);
+}
+.DropdownOptionsList{
+    display: none;
+}
+

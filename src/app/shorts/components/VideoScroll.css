@@ -1,0 +1,23 @@
+.getScreenSize{
+    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    white-space: nowrap;
+    overflow-y: scroll;
+}
+
+.cardHight{
+    aspect-ratio: 9/16;
+}
+
+.getScreenSize>div{
+    display: inline-block;
+    width: 100%;
+    scroll-snap-align: center;
+}
+
+.lessThanvh{
+    height: calc(100vh - 60px);
+  }
+  

@@ -1,0 +1,9 @@
+.lessThanvh{
+    height: calc(100vh - 60px);
+  }
+
+
+.transparentBg{
+    background-color: rgba(255, 0, 0, 0);
+}
+  
