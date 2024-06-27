@@ -25,7 +25,7 @@ const VideoCard = ({VideoUrl}) => {
                 <div ref={VideoCardRef} className="card min-h-full rounded-lg mx-auto relative ">
                     <Suspense fallback={<LoaderComponenet />}>
                         {IsFrameLoaded ? <></> :<div className='absolute top-0 w-full h-full flex items-center justify-center'><LoaderComponenet/></div>}
-                        <iframe src={VideoUrl} height={DiamentionContainer} frameBorder="0" className='mx-auto rounded-lg cardHight my-auto' allowFullScreen onLoad={()=>{setIsFrameLoaded(true)}}></iframe>
+                        <iframe src={VideoUrl} height={DiamentionContainer} frameBorder="0" className='mx-auto rounded-lg cardHight my-auto' allowFullScreen onLoad={()=>{setIsFrameLoaded(true)}} loading={"lazy"}></iframe>
                     </Suspense>
                 </div>
             </div>

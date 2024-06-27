@@ -18,7 +18,7 @@ function ImagedisplayerCard({img_url}) {
             {values.map((v, idx) => (
                 <Button key={idx} className=" border-2 border-gray-300 w-full h-full bg-gray-300 aspect-video p-0 m-0 rounded-md" onClick={() => handleShow(v)}>
                     <Suspense fallback={<LoaderComponenet/>}>
-                    <img src={img_url} className=' aspect-square w-full h-full rounded-md z-50' alt="" />
+                    <img src={img_url} className=' aspect-square w-full h-full rounded-md z-50' alt="" loading={"lazy"} />
                     </Suspense>
                 </Button>
             ))}
@@ -28,7 +28,7 @@ function ImagedisplayerCard({img_url}) {
                 <Modal.Body className='transparentBg p-1'>
                     <div className=" w-full h-full flex items-center justify-center p-0">
                         <Suspense fallback={<LoaderComponenet/>}>
-                        <img src={img_url} className=' rounded-md max-w-[700px] max-md:w-full max-h-[500px] border-2 border-gray-400'  alt="" />
+                        <img src={img_url} className=' rounded-md max-w-[700px] max-md:w-full max-h-[550px] border-2 border-gray-400'  alt=""  loading={"lazy"}/>
                         </Suspense>
                     </div>
                 </Modal.Body>

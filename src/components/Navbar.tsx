@@ -55,14 +55,14 @@ const Navbar = () => {
                             <div className='sm:absolute top-10 p-2 rounded-md DropdownOptionsList right-0 '>
                                 <ul className='flex flex-col gap-2 mt-1 max-sm:w-full rounded-md p-2 bg-white max-sm:text-sm text-sm z-50 w-72'>
                                     <Link href={"/images/"}>
-                                        <li className='hover:bg-blue-500 hover:text-white py-1 px-2 rounded'>Japan Images</li>
+                                        <li className='hover:bg-blue-500 hover:text-white py-1 px-2 rounded'>Images</li>
                                     </Link>
                                     <Link href={"/shorts"}>
                                         <li className='hover:bg-blue-500 hover:text-white py-1 px-2 rounded'>Shorts</li>
                                     </Link>
-                                    <li className='hover:bg-blue-500 hover:text-white py-1 px-2 rounded'>Score</li>
-                                    <li className='hover:bg-blue-500 hover:text-white py-1 px-2 rounded'>Content</li>
-                                    <li className='hover:bg-blue-500 hover:text-white py-1 px-2 rounded'>another</li>
+                                    <Link href={"/image-gallery?page=1"}>
+                                        <li className='hover:bg-blue-500 hover:text-white py-1 px-2 rounded'>Image Gallery</li>
+                                    </Link>
                                 </ul>
                             </div>
                         </li>

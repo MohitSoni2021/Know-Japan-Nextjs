@@ -20,7 +20,7 @@ const BlogEditorPage = () => {
 
     const UploadBlog = async()=>{
         let blogObject = {"id":1,"title":TitleInputRef.current.value,"body":BodyInputRef.current.value}
-        const response = await axios.post(`http://${document.location.host}/api/blogedits`, {
+        const response = await axios.post(`http://${document.location.host}/api/blogs`, {
             data:blogObject
         })
         console.log(response)
