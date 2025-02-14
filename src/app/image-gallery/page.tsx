@@ -108,8 +108,19 @@ const ImageGalleryPage = () => {
 
             <div className="allFilterOptions flex items-center gap-2">
                 <div className="filterBox m-2 border-1 p-2 rounded-md" ref={FilterContainerRef} >
-                    <button onClick={(e) => setImageOrder(e.target.innerText.toLowerCase())} className=" py-1 px-2 mr-2 border-b-4 border-blue-600">Popular</button>
-                    <button onClick={(e) => setImageOrder(e.target.innerText.toLowerCase())} className=" py-1 px-2  ">Latest</button>
+                    <button 
+  onClick={(e) => setImageOrder((e.target as HTMLButtonElement).innerText.toLowerCase())} 
+  className="py-1 px-2 mr-2 border-b-4 border-blue-600"
+>
+  Popular
+</button>
+
+<button 
+  onClick={(e) => setImageOrder((e.target as HTMLButtonElement).innerText.toLowerCase())} 
+  className="py-1 px-2"
+>
+  Latest
+</button>
                 </div>
                 <div className='m-2 border-1 p-2 rounded-md'>
                     <select name="" id="" className='py-1 px-2 outline-none bg-white border-b-4 border-blue-600 text-center' onChange={(e:any)=>{setImageType(e.target.value)}}>
