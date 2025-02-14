@@ -45,6 +45,8 @@ This project utilizes:
 [![https://res.cloudinary.com/dbc5dhyru/image/upload/v1739572181/know-japan-2_yilnz3.png](https://res.cloudinary.com/dbc5dhyru/image/upload/v1739572181/know-japan-2_yilnz3.png "https://res.cloudinary.com/dbc5dhyru/image/upload/v1739572181/know-japan-2_yilnz3.png")](http://https://res.cloudinary.com/dbc5dhyru/image/upload/v1739572181/know-japan-2_yilnz3.png "https://res.cloudinary.com/dbc5dhyru/image/upload/v1739572181/know-japan-2_yilnz3.png")
 [![https://res.cloudinary.com/dbc5dhyru/image/upload/v1739572176/know-japan-3_hp98yk.png](https://res.cloudinary.com/dbc5dhyru/image/upload/v1739572176/know-japan-3_hp98yk.png "https://res.cloudinary.com/dbc5dhyru/image/upload/v1739572176/know-japan-3_hp98yk.png")](https://res.cloudinary.com/dbc5dhyru/image/upload/v1739572176/know-japan-3_hp98yk.pnghttp:// "https://res.cloudinary.com/dbc5dhyru/image/upload/v1739572176/know-japan-3_hp98yk.png")
 
+[LIVE HERE](https://know-japan-nextjs.vercel.app/)
+
 ## Getting Started
 
 To set up the project locally, follow these steps:
