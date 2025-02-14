@@ -67,11 +67,14 @@ const ImageGalleryPage = () => {
     const handleClose = () => setOpen(false);
 
     const nextFunction = () => {
-        router.push(`/image-gallery?page=${parseInt(param.get("page")) + 1}`)
-    }
-    const PreviousFunction = () => {
-        router.push(`/image-gallery?page=${parseInt(param.get("page")) <= 1 ? 1 : parseInt(param.get("page")) - 1}`)
-    }
+          const page = parseInt(param.get("page") || "1"); // Default to "1" if null
+          router.push(`/image-gallery?page=${page + 1}`);
+        };
+        
+        const PreviousFunction = () => {
+          const page = parseInt(param.get("page") || "1"); // Default to "1" if null
+          router.push(`/image-gallery?page=${page <= 1 ? 1 : page - 1}`);
+        };
 
     const OpenPreviewImageWindow = (e: any) => {
         handleOpen()
